@@ -7,7 +7,7 @@
     <version>1.0</version>
     <organization>
         <name>LinasJu itunes search</name>
-        <url>http://www.searcItunesAuthors.com/</url>
+        <url>http://www.searchItunesAuthors.com/</url>
     </organization>
     <name>itunesSearch</name>
     <description>This is an exercise for creating itunesSearch plugin for Atlassian JIRA.</description>
