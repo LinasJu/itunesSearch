@@ -1,15 +1,13 @@
 package it.com.atlassian.plugins.exercise.rest;
 
-import org.junit.Test;
-import org.junit.After;
-import org.junit.Before;
-import org.mockito.Mockito;
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
-import com.atlassian.plugins.exercise.rest.searchResource;
 import com.atlassian.plugins.exercise.rest.searchResourceModel;
 import org.apache.wink.client.Resource;
 import org.apache.wink.client.RestClient;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class searchResourceFuncTest {
 

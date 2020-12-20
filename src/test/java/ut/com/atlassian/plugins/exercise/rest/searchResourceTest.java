@@ -1,16 +1,15 @@
 package ut.com.atlassian.plugins.exercise.rest;
 
-import org.junit.Ignore;
-import org.junit.Test;
+import com.atlassian.plugins.exercise.rest.SearchResource;
+import com.atlassian.plugins.exercise.rest.searchResourceModel;
 import org.junit.After;
 import org.junit.Before;
-import org.mockito.Mockito;
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
-import com.atlassian.plugins.exercise.rest.searchResource;
-import com.atlassian.plugins.exercise.rest.searchResourceModel;
+import org.junit.Ignore;
+import org.junit.Test;
+
 import javax.ws.rs.core.Response;
-import javax.ws.rs.core.GenericEntity;
+
+import static org.junit.Assert.assertEquals;
 
 @Ignore //todo this time it will be ignored, but it is needed to pass
 public class searchResourceTest {
@@ -27,7 +26,7 @@ public class searchResourceTest {
 
     @Test
     public void messageIsValid() {
-        searchResource resource = new searchResource();
+        SearchResource resource = new SearchResource();
 
         Response response = resource.getMessage("Hello World"); //this is for basic pass
         final searchResourceModel message = (searchResourceModel) response.getEntity();
