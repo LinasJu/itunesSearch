@@ -1,13 +1,8 @@
 package com.atlassian.plugins.exercise.rest;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import javax.xml.bind.annotation.*;
 @XmlRootElement(name = "message")
 @XmlAccessorType(XmlAccessType.FIELD)
-@Getter
-@Setter
 public class searchResourceModel {
 
     @XmlElement(name = "value")
@@ -20,6 +15,22 @@ public class searchResourceModel {
 
     public searchResourceModel(String key, String message) {
         this.message = message;
+        this.key = key;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
         this.key = key;
     }
 }
