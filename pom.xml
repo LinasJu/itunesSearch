@@ -29,12 +29,6 @@
             <scope>provided</scope>
         </dependency>
         -->
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.18.16</version>
-                <scope>provided</scope>
-            </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -130,6 +124,20 @@
             <version>1.8.5</version>
             <scope>test</scope>
         </dependency>
+        <!-- PROBLEMOS SU SITAIS DEPENDENCIAIS -->
+        <dependency>
+            <groupId>com.konghq</groupId>
+            <artifactId>unirest-java</artifactId>
+            <version>3.11.09</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.16</version>
+            <scope>provided</scope>
+        </dependency>
+        <!--bandyta abu ideti i <Import-Package>, bet greiciausiai neteisingai-->
     </dependencies>
     <build>
         <plugins>
@@ -156,10 +164,15 @@
                     <!-- https://developer.atlassian.com/docs/advanced-topics/configuration-of-instructions-in-atlassian-plugins -->
                     <instructions>
                         <Atlassian-Plugin-Key>${atlassian.plugin.key}</Atlassian-Plugin-Key>
-                        <!-- Add package to export here -->
+                        <!-- Adcom.atlassian.pluginsd package to export here -->
                         <Export-Package>com.atlassian.plugins.exercise.api,</Export-Package>
                         <!-- Add package import here -->
-                        <Import-Package>org.springframework.osgi.*;resolution:="optional", org.eclipse.gemini.blueprint.*;resolution:="optional", *</Import-Package>
+                        <Import-Package>org.springframework.osgi.*;resolution:="optional",
+                            org.eclipse.gemini.blueprint.*;resolution:="optional",
+                            com.konghq.*;resolution:="optional",*
+                        </Import-Package>
+                        <Embed-Dependency>konghq</Embed-Dependency>
+
                         <!-- Ensure plugin is spring powered -->
                         <Spring-Context>*</Spring-Context>
                     </instructions>
