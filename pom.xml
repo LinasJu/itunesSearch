@@ -138,6 +138,11 @@
             <scope>provided</scope>
         </dependency>
         <!--bandyta abu ideti i <Import-Package>, bet greiciausiai neteisingai-->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.13-atlassian-1</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
