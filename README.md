@@ -23,17 +23,21 @@ responses.
 
 After running atlassian, you could
 send ```GET <your-local-jira-url>/rest/searchresource/1.0/message/1.0/artists?=<artists>``` request and
-get [JSON](https://www.json.org/) formatted response. in ```<artists>``` you can input your  search object.
+get [JSON](https://www.json.org/) formatted response. in ```<artists>``` you can input your search object.
 
-Request example:  ```GET <your-local-jira-url>/rest/searchresource/1.0/message/1.0/artists?=sylosis```
+Request example:  
+```GET <your-local-jira-url>/rest/searchresource/1.0/message/1.0/artists?=sylosis```
 
-Response example: ```json
+Response example:
+
+```json
 [
-{
-    "name": Sylosis
-    "link": "https://music.apple.com/us/artist/sylosis/191950242?uo=4",
-    "id": 191950242,
-    "genre": "Metal",
-    "genreId": 1153
-}
-]```
+    {
+        "name": "Sylosis",
+        "link": "https://music.apple.com/us/artist/sylosis/191950242?uo=4",
+        "id": 191950242,
+        "genre": "Metal",
+        "genreId": 1153
+    }
+]
+```
