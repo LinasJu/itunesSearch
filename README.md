@@ -5,7 +5,7 @@ itunesSearch is a Jira plugin to search apple Itunes store for artists and retur
 ## Installation #
 
 First of all, you you need to install
-[atlassian SDK.](https://developer.atlassian.com/server/framework/atlassiansdk/downloads/)
+[atlassian SDK.](https://developer.atlassian.com/server/framework/atlassian-sdk/downloads/)
 
 Here are the SDK commands you'll use immediately (commands must be run in plugin folder):
 
