@@ -27,7 +27,7 @@ get [JSON](https://www.json.org/) formatted response. in ```<artists>``` you can
 
 Request example:  ```GET <your-local-jira-url>/rest/searchresource/1.0/message/1.0/artists?=sylosis```
 
-Response example: ```
+Response example: ```json
 [
 {
     "name": Sylosis
