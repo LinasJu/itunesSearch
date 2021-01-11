@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.xml.bind.annotation.*;
+
 @XmlRootElement(name = "message")
 @XmlAccessorType(XmlAccessType.FIELD)
 @Getter
